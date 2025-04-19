@@ -8,7 +8,8 @@ import CountrySelector from "./country-selector"
 import { countries } from "@/lib/countries"
 
 export default function WhatsappForm() {
-  const [selectedCountry, setSelectedCountry] = useState(countries[0])
+  const defaultCountry = countries.find((country) => country.name === "Colombia")
+  const [selectedCountry, setSelectedCountry] = useState(defaultCountry)
   const [phoneNumber, setPhoneNumber] = useState("")
   const [message, setMessage] = useState("")
   const [error, setError] = useState("")
