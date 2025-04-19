@@ -78,6 +78,7 @@ export default function WhatsappForm() {
             className="flex-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm p-3 dark:bg-gray-700 dark:text-white"
             placeholder="123456789"
             value={phoneNumber}
+            autoFocus
             onChange={handlePhoneChange}
             onKeyDown={handlePhoneKeyDown}
           />
